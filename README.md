@@ -31,7 +31,7 @@ deep_translator package
 Coming soon...
 
 📷 Screenshots
-Add screenshots here once deployed!
+Coming soon...
 
 
 📩 Contact
