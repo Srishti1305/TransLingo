@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify, render_template
 from deep_translator import GoogleTranslator  # or any translator of your choice
 
@@ -20,8 +21,9 @@ def translate():
         return jsonify({'translatedText': f"Error: {str(e)}"}), 500
 
 if __name__ == '__main__':
-import os
+
 
 port = int(os.environ.get("PORT", 5000))
 app.run(host='0.0.0.0', port=port, debug=True)
 
+Bind Flask to 0.0.0.0 using PORT env var for Render
