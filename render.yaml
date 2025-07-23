@@ -2,6 +2,9 @@ services:
   - type: web
     name: translingo
     env: python
-    buildCommand: ""
-    startCommand: python app.py
-    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+
