@@ -8,7 +8,5 @@ services:
     plan: free
     autoDeploy: true
     runtime: python 3.10
-    envVars:
-      - key: FLASK_ENV
-        value: production
+    
 
